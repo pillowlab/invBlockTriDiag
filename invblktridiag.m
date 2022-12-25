@@ -1,12 +1,8 @@
 function [MinvDiag,MinvDiagBlocks,MinvAboveDiagBlocks] = invblktridiag(M,nn)
 % [MinvDiag,MinvDiagBlocks,MinvAboveDiagBlocks] = invblktridiag(M,nn)
 %
-% Find central blocks of the inverse of a square symmetric block tri-diagonal matrix
-% using O(N) recursive method of Rybicki & Hummer (1991).
-%
-% If M is the inverse covariance matrix, then L0 contains the central
-% blocks of the marginal covariance 
-% of the 
+% Find main and above-diagonal blocks of the inverse of a block tri-diagonal 
+% matrix using O(N) recursive method of Rybicki & Hummer (1991). 
 %
 % Inputs:  
 % ------
